@@ -1,8 +1,10 @@
 # E-Commerce Analytics System with LLM-Augmented Intelligence
 
-## Overview
+AI-Powered E-Commerce Analytics Platform
 
-A comprehensive e-commerce analytics platform built with **PostgreSQL**, **Python**, and **LLM-powered intelligence**, based on the **Brazilian E-Commerce Public Dataset**. The system enables scalable storage, efficient querying, and insightful reporting of customer, order, payment, and seller data — now fully deployed to the cloud with an interactive real-time dashboard.
+CommerceLens is a cloud-deployed analytics platform that combines PostgreSQL, Python, and Large Language Models to transform raw e-commerce data into actionable business intelligence.
+
+Built on a large-scale Brazilian e-commerce dataset, the platform integrates structured analytics, automated reporting, customer sentiment analysis, and interactive dashboards to help stakeholders understand sales performance, customer behavior, operational efficiency, and market trends.
 
 🔗 **Live App**: [https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/](https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/)
 
@@ -23,26 +25,48 @@ This project uses the **Brazilian E-Commerce Public Dataset** extended with cust
 
 ---
 
-## Phase 1: PostgreSQL-Based Analytics System ✅
+Overview
 
-### Technologies Used
-- PostgreSQL
-- SQL (DDL, DML, analytical queries)
-- PL/pgSQL (stored procedures, triggers)
-- Indexing and query optimization
+Modern e-commerce organizations generate enormous volumes of transactional and customer interaction data. While traditional SQL analytics can reveal trends and metrics, extracting business insights often requires manual interpretation.
 
-### Core Features
-- Structured schema with 11+ interconnected tables
-- Data cleaning and loading via SQL scripts
-- Complex queries for sales trends, delivery delays, seller rankings, and customer behaviour
-- Stored procedures for customer and order management workflows
-- Triggers for error logging and data integrity
-- Performance tuning using `EXPLAIN ANALYZE` and targeted indexing
+CommerceLens bridges this gap by combining relational database analytics with LLM-powered intelligence, enabling both quantitative reporting and natural-language business insights.
 
-### Deliverables
-- `load_create.sql` — Table schemas, constraints, and data load operations
-- `sql project 2.sql` — Core SQL logic including CRUD, analytics, functions, triggers, and indexes
-- `Phase2report.pdf` — Full documentation covering schema design, ER diagrams, query logic, and performance optimization
+The system supports:
+
+Advanced SQL analytics
+Customer behavior analysis
+Seller performance evaluation
+Order and payment tracking
+AI-generated executive summaries
+Customer sentiment intelligence
+Interactive cloud-hosted dashboards
+Key Features
+Business Analytics
+Sales trend analysis
+Revenue monitoring
+Customer segmentation
+Seller performance tracking
+Delivery performance reporting
+Product category analysis
+Payment behavior insights
+Database Engineering
+Normalized relational schema
+Multi-table analytical queries
+Stored procedures
+Database triggers
+Query optimization
+Index-based performance tuning
+AI-Powered Intelligence
+Customer feedback summarization
+Complaint categorization
+Automated executive reporting
+Natural language business insights
+Trend interpretation using LLMs
+Interactive Dashboard
+Real-time visual analytics
+KPI monitoring
+Executive reporting interface
+Interactive business intelligence views
 
 ### ER Diagram
 
@@ -97,36 +121,32 @@ The full system is deployed to the cloud using a free-tier stack with no payment
 - PostgreSQL (local) or Supabase account
 - Groq API key (free at [https://console.groq.com](https://console.groq.com))
 
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/shubhrat12/E-Commerce-Analytics-System-with-LLM-Augmented-Intelligence
-cd E-Commerce-Analytics-System-with-LLM-Augmented-Intelligence
-```
-
-
-2. Install dependencies:
-```bash
+Installation
+Clone Repository
+git clone https://github.com/yourusername/commercelens.git
+cd commercelens
+Install Dependencies
 pip install -r requirements.txt
-```
+Configure Environment Variables
 
-3. Create a `.env` file:
-```
-DB_HOST=your_db_host
+Create a .env file:
+
+DB_HOST=your_database_host
 DB_PORT=5432
 DB_NAME=postgres
-DB_USER=your_db_user
-DB_PASSWORD=your_db_password
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+
 GROQ_API_KEY=your_groq_api_key
-```
+Running the Application
 
-4. Run the dashboard:
-```bash
+Launch the dashboard:
+
 streamlit run dashboard.py
-```
 
----
+The application will be available locally at:
+
+http://localhost:8501
 
 ### Common Setup Issue: CSV Path / Permission Error in PostgreSQL
 
