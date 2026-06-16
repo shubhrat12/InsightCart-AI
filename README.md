@@ -6,7 +6,7 @@ CommerceLens is a cloud-deployed analytics platform that combines PostgreSQL, Py
 
 Built on a large-scale Brazilian e-commerce dataset, the platform integrates structured analytics, automated reporting, customer sentiment analysis, and interactive dashboards to help stakeholders understand sales performance, customer behavior, operational efficiency, and market trends.
 
-🔗 **Live App**: [https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/](https://dashboardpy-kd6kgsdnkpzg5s7wjd3uaf.streamlit.app/)
+🔗 **Live App**: [https://ashruj-ecommercewebsite.streamlit.app/](https://ashruj-ecommercewebsite.streamlit.app/)
 
 ---
 
